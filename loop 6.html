@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p>Click the button to get the summation between 0and10</p>
+
+<button onclick="addAllTheNumberBetweenTwoGivenNumber()">Result</button>
+
+<p id="add"></p>
+
+<script>
+function addAllTheNumberBetweenTwoGivenNumber() {
+    var startValue=0;
+	var endValue=10;
+	var sum=0;
+    for(var i=startValue; i<=endValue; i=i+1)
+	{
+	sum=sum+i;
+    }
+    document.getElementById("add").innerHTML =sum;
+}
+
+
+</script>
+</body>
+</html>
